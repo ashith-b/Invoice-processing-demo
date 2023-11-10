@@ -1,3 +1,149 @@
-{ 
+{
   "raw_invoice_data": "Bill To: Integrated Living Australia Ltd PO Box 637 MUSWELLBROOK NSW 2333\nTax Invoice\nAttention: Tracy Turner\nInvoice No.:\n1769\nDate:\n31/07/2022\nTerms:\nNet 30 after EOM\nDescription\nPrice\nJuly 2022 SEM Digital Retainer\n$900.00\nJuly 2022 Brand Google Ads & Google Display Ads Media\n$1,000.00\nJuly 2022 Recruitment Google Ads Media\n$2,000.00\nGST:\n$390.00\nTotal Inc GST:\n$4,290.00\nPage 1 of 1\nmoonlighting\nYour Order No:\nMoonlighting Connects Pty Ltd 394 Flinders Parade, - Brighton. Q. 4017 Email: julie@moonlightingconnects.com.au ABN: 82 613 206 125 Bank: Commonwealth BSB: 064 124 Account No: 10468512 Account Holder: Moonlighting Connects Pty Ltd",
+  "json_schema": {
+    "title": "id",
+    "description": "Extract information from invoice",
+    "type": "object",
+    "properties": {
+        "id": {
+            "title": "ID",
+            "description": "assign a random UUID as value to id key",
+            "type": "string"
+        },
+        "name_of_the_company": {
+            "title": "name_of_the_company",
+            "description": "Identify the name of the company",
+            "type": "string"
+        },
+        "address": {
+            "title": "address",
+            "description": "Identify the address of the company",
+            "type": "string"
+        },
+        "issued_to": {
+            "title": "issued_to",
+            "description": "which company was the invoice issued to",
+            "type": "string"
+        },
+        "total_amount": {
+            "title": "total_amount",
+            "description": "What is the total amount of the invoice",
+            "type": "string"
+        },
+        "balance": {
+            "title": "balance",
+            "description": "What is the balance amount of the invoice",
+            "type": "string"
+        },
+        "invoice_number": {
+            "title": "invoice_number",
+            "description": "what is the invoice number",
+            "type": "string"
+        },
+        "invoice_date": {
+            "title": "invoice_date",
+            "description": "what is the date the invoice issued",
+            "type": "string"
+        },
+        "shipment_details": {
+            "title": "shipment_details",
+            "description": "Please mentions the details of the shipment",
+            "type": "string"
+        },
+        "line_items": {
+            "title": "line_items",
+            "description": "what are line items mentioned and please put them in json format",
+            "type": "string"
+        },
+        "payment_terms": {
+            "title": "payment_terms",
+            "description": "what is the payment terms mentioned",
+            "type": "string"
+        }
+    },
+    "required": ["id", "name_of_the_company", "address", "issued_to", "total_amount", "balance", "invoice_number", "invoice_date", "shipment_details", "line_items", "payment_terms"]
+  }
+
+}
+
+{
+  "raw_invoice_data": "Bill To: Integrated Living Australia Ltd PO Box 637 MUSWELLBROOK NSW 2333\nTax Invoice\nAttention: Tracy Turner\nInvoice No.:\n1769\nDate:\n31/07/2022\nTerms:\nNet 30 after EOM\nDescription\nPrice\nJuly 2022 SEM Digital Retainer\n$900.00\nJuly 2022 Brand Google Ads & Google Display Ads Media\n$1,000.00\nJuly 2022 Recruitment Google Ads Media\n$2,000.00\nGST:\n$390.00\nTotal Inc GST:\n$4,290.00\nPage 1 of 1\nmoonlighting\nYour Order No:\nMoonlighting Connects Pty Ltd 394 Flinders Parade, - Brighton. Q. 4017 Email: julie@moonlightingconnects.com.au ABN: 82 613 206 125 Bank: Commonwealth BSB: 064 124 Account No: 10468512 Account Holder: Moonlighting Connects Pty Ltd",
+  "json_schema": "default"
+}
+
+{
+  "raw_invoice_data": "Bill To: Integrated Living Australia Ltd PO Box 637 MUSWELLBROOK NSW 2333\nTax Invoice\nAttention: Tracy Turner\nInvoice No.:\n1769\nDate:\n31/07/2022\nTerms:\nNet 30 after EOM\nDescription\nPrice\nJuly 2022 SEM Digital Retainer\n$900.00\nJuly 2022 Brand Google Ads & Google Display Ads Media\n$1,000.00\nJuly 2022 Recruitment Google Ads Media\n$2,000.00\nGST:\n$390.00\nTotal Inc GST:\n$4,290.00\nPage 1 of 1\nmoonlighting\nYour Order No:\nMoonlighting Connects Pty Ltd 394 Flinders Parade, - Brighton. Q. 4017 Email: julie@moonlightingconnects.com.au ABN: 82 613 206 125 Bank: Commonwealth BSB: 064 124 Account No: 10468512 Account Holder: Moonlighting Connects Pty Ltd",
+  "json_schema": {
+    "title": "id",
+    "description": "Extract information from invoice",
+    "type": "object",
+    "properties": {
+        "id": {
+            "title": "ID",
+            "description": "assign a random UUID as value to id key",
+            "type": "string"
+        },
+        "name_of_the_company": {
+            "title": "name_of_the_company",
+            "description": "Identify the name of the company",
+            "type": "string"
+        },
+        "address": {
+            "title": "address",
+            "description": "Identify the address of the company",
+            "type": "string"
+        },
+        "issued_to": {
+            "title": "issued_to",
+            "description": "which company was the invoice issued to",
+            "type": "string"
+        },
+        "total_amount": {
+            "title": "total_amount",
+            "description": "What is the total amount of the invoice",
+            "type": "string"
+        },
+        "balance": {
+            "title": "balance",
+            "description": "What is the balance amount of the invoice",
+            "type": "string"
+        },
+        "invoice_number": {
+            "title": "invoice_number",
+            "description": "what is the invoice number",
+            "type": "string"
+        },
+        "invoice_date": {
+            "title": "invoice_date",
+            "description": "what is the date the invoice issued",
+            "type": "string"
+        },
+        "shipment_details": {
+            "title": "shipment_details",
+            "description": "Please mentions the details of the shipment",
+            "type": "string"
+        },
+        "line_items": {
+            "title": "line_items",
+            "description": "what are line items mentioned and please put them in json format",
+            "type": "string"
+        },
+        "payment_terms": {
+            "title": "payment_terms",
+            "description": "what is the payment terms mentioned",
+            "type": "string"
+        }
+    },
+    "required": ["id", "name_of_the_company", "address", "issued_to", "total_amount", "balance", "invoice_number", "invoice_date", "shipment_details", "line_items", "payment_terms"]
+  }
+}
+
+{
+  "raw_invoice_data": "Bill To: Integrated Living Australia Ltd PO Box 637 MUSWELLBROOK NSW 2333\nTax Invoice\nAttention: Tracy Turner\nInvoice No.:\n1769\nDate:\n31/07/2022\nTerms:\nNet 30 after EOM\nDescription\nPrice\nJuly 2022 SEM Digital Retainer\n$900.00\nJuly 2022 Brand Google Ads & Google Display Ads Media\n$1,000.00\nJuly 2022 Recruitment Google Ads Media\n$2,000.00\nGST:\n$390.00\nTotal Inc GST:\n$4,290.00\nPage 1 of 1\nmoonlighting\nYour Order No:\nMoonlighting Connects Pty Ltd 394 Flinders Parade, - Brighton. Q. 4017 Email: julie@moonlightingconnects.com.au ABN: 82 613 206 125 Bank: Commonwealth BSB: 064 124 Account No: 10468512 Account Holder: Moonlighting Connects Pty Ltd",
+  "json_schema": "{\r\n    \"title\": \"id\",\r\n    \"description\": \"Extract information from invoice\",\r\n    \"type\": \"object\",\r\n    \"properties\": {\r\n        \"Vendor No.\": {\r\n            \"title\": \"Vendor No.\",\r\n            \"description\": \"Identify the ID of the vendor\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"Vendor Name\": {\r\n            \"title\": \"Vendor Name\",\r\n            \"description\": \"Identify the name of the vendor\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"Account No.\": {\r\n            \"title\": \"Account No.\",\r\n            \"description\": \"Identify the account number\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"Property Address\": {\r\n            \"title\": \"Property Address\",\r\n            \"description\": \"Identify the Property Address\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"Posted Purchase Invoice\": {\r\n            \"title\": \"Posted Purchase Invoice\",\r\n            \"description\": \"Identify the Posted Purchase Invoice\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"Invoice Date\": {\r\n            \"title\": \"Invoice Date\",\r\n            \"description\": \"Identify the Invoice Date\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"Fixed Charge Start Date\": {\r\n            \"title\": \"Fixed Charge Start Date\",\r\n            \"description\": \"Identify the Fixed Charge Start Date\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"Fixed Charge End Date\": {\r\n            \"title\": \"Fixed Charge End Date\",\r\n            \"description\": \"Identify the Fixed Charge End Date\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"Fixed Charge for Water Service\": {\r\n            \"title\": \"Fixed Charge for Water Service\",\r\n            \"description\": \"Identify the Fixed Charge for Water Service\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"Fixed Charge for Waste Water\": {\r\n            \"title\": \"Fixed Charge for Waste Water\",\r\n            \"description\": \"Identify the Fixed Charge for Waste Water\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"Total Fixed Charges\": {\r\n            \"title\": \"Total Fixed Charges\",\r\n            \"description\": \"Identify the Total Fixed Charges\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"line items\": {\r\n            \"title\": \"line items\",\r\n            \"description\": \"What are line items, such as Water Oncharging, mentioned, and please put them in the following JSON format\",\r\n            \"type\": \"string\"\r\n        }\r\n    },\r\n    \"required\": [\"Vendor Name\", \"Property Address\", \"line items\"]\r\n}\r\n"
+}
+
+{
+  "raw_invoice_data": "Taswarer\nTasmanian Water and Sewerage Corporation Pty Ltd ABN 47 162 220 653\nCommunity Housing Limited Att: Accounts Payable 19-23 Prospect Street BOX HILL VIC 3128\nTax invoice summary\nBilling period 01 Jul 2023 - 30 Sep 2023\nFixed charges\n$2,813.96\nVariable usage charges\n$192.14\nGST\n$0.00\nTotal new charges (this bill)\n$3,006.10\nPrevious bill\n$2,896.31\nAdjustments\n-$2,896.31\nTotal\n$3,006.10\nYour current average use is 1.95 kL/day Your current average cost is $2.21/day\nMeter reading Your water usage for this quarter is based on a meter reading\n--- * If you plan to pay in person please do not cut\nTaswarer Payment slip\nAccount no.\n240040372\nConnection address 9 Hawkins Street LATROBE TAS\nDIRECT DEBIT\nDirect Debit\nBPAY BPAY®\nWould you like to receive all TasWater notices digitally? Scan this QR code, or visit: www.taswater.com.au/digital-billing\nPlease phone 13 6992 or visit\nwww.taswater.com.au/payment\nBiller code: 117309\nRef: 3991 2400 4037 22\nAll enquiries & emergencies 13 6992\nemail enquiries@taswater.com.au website www.taswater.com.au post GPO Box 1393 Hobart Tasmania 7001\nf\nTasWater1 Tas_Water\ntas_water\nAmount due: $3,006.10\nPlease pay by: 22 Aug 2023\nYour account details\nAccount no.\n240040372\nConnection\n9 Hawkins Street\naddress\nLATROBE TAS\nStatement no. 7716974596\nDate issued\n18/07/2023\nInstallation no. 440012300\nAverage daily usage in kilolitres 3\n2\n1\n0\nJul Oct Jan Apr Jul\nRead period ending\nAmount due: $3,006.10 Please pay by: 22 Aug 2023\nRegister with BPAY View® to view and pay this bill using internet banking Registration No: 3991 2400 4037 22 For assistance contact your financial institution.\n557785-009 000206(8571 :selected:\nTax invoice itemised Billing period 01 Jul 2023 - 30 Sep 2023\nFixed or service charges\nFull Fixed Water Charge - 20mm × 8 (01/07/23-30/09/23)\n$760.48\nFire Service Fixed Charge - 100mm (01/07/23-30/09/23)\n$594.12\nFull Fixed Sewerage Charge x 8 ETs (01/07/23-30/09/23)\n$1,459.36\nSubtotal\n$2,813.96\nVariable usage charges\nVariable Water Charge (17kL @ 1.1376/kL) (19/04/23-30/06/23)\n$19.34\nVariable Water Charge (3kL @ 1.1774/kL) (01/07/23-14/07/23)\n$3.53\nVariable Water Charge (12kL @ 1.1376/kL) (19/04/23-30/06/23)\n$13.65\nVariable Water Charge (2kL @ 1.1774/kL) (01/07/23-14/07/23)\n$2.35\nVariable Water Charge (11kL @ 1.1376/kL) (19/04/23-30/06/23)\n$12.51\nVariable Water Charge (2kL @ 1.1774/kL) (01/07/23-14/07/23)\n$2.35\nVariable Water Charge (21kL @ 1.1376/kL) (19/04/23-30/06/23)\n$23.89\nVariable Water Charge (4kL @ 1.1774/kL) (01/07/23-14/07/23)\n$4.71\nVariable Water Charge (27kL @ 1.1376/kL) (19/04/23-30/06/23)\n$30.72\nVariable Water Charge (5kL @ 1.1774/kL) (01/07/23-14/07/23)\n$5.89\nVariable Water Charge (17kL @ 1.1376/kL) (19/04/23-30/06/23)\n$19.34\nVariable Water Charge (3kL @ 1.1774/kL) (01/07/23-14/07/23)\n$3.53\nVariable Water Charge (14kL @ 1.1376/kL) (19/04/23-30/06/23)\n$15.93\nVariable Water Charge (3kL @ 1.1774/kL) (01/07/23-14/07/23)\n$3.53\nVariable Water Charge (23kL @ 1.1376/kL) (19/04/23-30/06/23)\n$26.16\nVariable Water Charge (4kL @ 1.1774/kL) (01/07/23-14/07/23)\n$4.71\nSubtotal\n$192.14\nTotal\n$3,006.10\nMeter details\nMeter reading Your water usage for this quarter is based on a meter reading\nWays to pay your bill\nAdditional information\nNeed help paying your bill? We can help. Please call us on 13 6992 and we'll help make a plan that works for you.\nEligible for a concession? If you have an eligible concession card, we can apply a discount to your bill. Call us on 13 6992 or apply online at taswater.com.au/concessions\nInterest on overdue amounts Daily interest is charged on overdue amounts from the due date at the monthly 90-day Bank Accepted Bill Rate plus 6%.\nChanged your contact details? Please call us on 13 6992 and we'll update your details or go to taswater.com.au/update\nSelling a property? If you sell your property, you are still liable for TasWater bills until your solicitor or conveyancer lets us know that ownership has changed. For more information, see taswater.com.au/ownership\nReading your meter every 3 months We need to be able to see your meter and access it easily and safely. Please keep your plants pruned around the meter, restrain your pets and leave your gate unlocked. If we can't safely read your meter, we will estimate your water usage for the next bill.\nYour information is private See our website to read our Privacy and Credit Reporting Policy at taswater.com.au/privacy\nHearing or speech impaired? Call us via the National Relay Service: TTY: call 13 3677 then ask for 13 6992. Speak and Listen: call 1300 555 727 then ask for 13 6992.\nNeed an interpreter? TIS National provides immediate phone interpreting services in 160 languages. Call 13 14 50.\nYour account details\nTaswater\nTasmanian Government\ncentrelink\nAccount\nService Tasmania\nPhone 1300 729 859 Billpay code: 8261 Reference: 39912 40040 37231\nCentrepay\nContact Centrelink for setup humanservices.gov.au/ centrepay Reference: 240040372\nBy mail Send this slip with your cheque (no staples) to: GPO Box 1393 Hobart Tas 7001\nRef\nAmount\nPost Billpay\nReceipt\nAustralia Post Pay in store at Australia\n*444 3991 240040372 31\nDate\nPost\nThanks! :selected:" ,
+  "json_schema": "default"
 }

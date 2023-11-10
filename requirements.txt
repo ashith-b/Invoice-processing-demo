@@ -3,6 +3,10 @@
 # Manually managing azure-functions-worker may cause unexpected issues
 
 azure-functions
-openai
-langchain
+openai==0.28.1
+langchain==0.0.315
 python-dotenv
+pandas
+azure-storage-blob
+openpyxl 
+azure-identity
