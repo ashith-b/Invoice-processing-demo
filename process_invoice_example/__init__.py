@@ -133,7 +133,6 @@ def extract_attributes(json_data, parent_key=''):
     return attributes_list
 
 def download_blob_from_storage(blob_path):
-    blob_name = os.path.basename(blob_path)
     
     blob_service_client = BlobServiceClient.from_connection_string(os.environ['AZURE_STORAGE_CONNECTION_STRING'])
 
@@ -141,7 +140,7 @@ def download_blob_from_storage(blob_path):
     container_client = blob_service_client.get_container_client(os.environ['BLOB_CONTAINER_NAME'])
 
     # Get a client to interact with the specified blob
-    blob_client = container_client.get_blob_client(blob_name)
+    blob_client = container_client.get_blob_client(blob_path.replace(f"{os.environ['BLOB_CONTAINER_NAME']}/",""))
 
     # Download the blob's content
     with io.BytesIO() as input_stream:
@@ -155,9 +154,6 @@ def download_blob_from_storage(blob_path):
         input_stream.seek(0)
         
         # Load the stream data into a pandas DataFrame
-        df = pd.read_excel(input_stream)
-
-        # Read the stream into a pandas DataFrame
         df = pd.read_excel(input_stream)
 
     json_str = df.apply(lambda x: [x.dropna()], axis=1).to_json(orient='index', date_format='iso')
