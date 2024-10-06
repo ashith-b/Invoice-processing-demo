@@ -1,0 +1,63 @@
+{
+                                    "title": "Invoice",
+                                    "description": "Extract information from an invoice",
+                                    "type": "object",
+                                    "properties": {
+                                        "Vendor No.": {
+                                            "title": "Vendor No.",
+                                            "description": "Identify the ID of the vendor",
+                                            "type": "string"
+                                        },
+                                        "Vendor Name": {
+                                            "title": "Vendor Name",
+                                            "description": "Identify the name of the vendor",
+                                            "type": "string"
+                                        },
+                                        "Account No.": {
+                                            "title": "Account No.",
+                                            "description": "Identify the account number",
+                                            "type": "string"
+                                        },
+                                        "Property Address": {
+                                            "title": "Property Address",
+                                            "description": "Identify the Property Address",
+                                            "type": "string"
+                                        },
+                                        "Posted Purchase Invoice": {
+                                            "title": "Posted Purchase Invoice",
+                                            "description": "Identify the Posted Purchase Invoice",
+                                            "type": "string"
+                                        },
+                                        "Invoice Date": {
+                                            "title": "Invoice Date",
+                                            "description": "Identify the Invoice Date",
+                                            "type": "string"
+                                        },
+                                        "Fixed Charge Start Date": {
+                                            "title": "Fixed Charge Start Date",
+                                            "description": "Identify the Fixed Charge Start Date",
+                                            "type": "string"
+                                        },
+                                        "Fixed Charge End Date": {
+                                            "title": "Fixed Charge End Date",
+                                            "description": "Identify the Fixed Charge End Date",
+                                            "type": "string"
+                                        },
+                                        "Fixed Charge for Water Service": {
+                                            "title": "Fixed Charge for Water Service",
+                                            "description": "Identify the Fixed Charge for Water Service",
+                                            "type": "string"
+                                        },
+                                        "Fixed Charge for Waste Water": {
+                                            "title": "Fixed Charge for Waste Water",
+                                            "description": "Identify the Fixed Charge for Waste Water",
+                                            "type": "string"
+                                        },
+                                        "Total Fixed Charges": {
+                                            "title": "Total Fixed Charges",
+                                            "description": "Identify the Total Fixed Charges",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": ["Vendor No.", "Vendor Name", "Account No.", "Property Address", "Posted Purchase Invoice", "Invoice Date", "Fixed Charge Start Date", "Fixed Charge End Date", "Fixed Charge for Water Service", "Fixed Charge for Waste Water", "Total Fixed Charges"]
+                                }
